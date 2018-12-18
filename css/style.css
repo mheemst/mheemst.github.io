@@ -1,43 +1,101 @@
 @charset "utf-8";
 
+:root{
+  --h1-bg-color: #114B5F;
+  --h2-bg-color: #1A936F;
+  --body-bg-color: #FFF9F9;
+  --nav-bg-color: #C6DABF;
+  --nav-link-bg-color1: #114B5F;
+  --nav-link-bg-color2: #88D498;
+	
+  --nav-link-text-color: white;
+  --h1-text-color: white;
+  --h2-text-color: white;
+}
+
 body{
 	font-family: sans-serif;
+	background-color: var(--body-bg-color);
 }
 
 section{
 	position: relative;
 	padding: 3px;
+	
 }
 
 h2{
-	margin: 5px;
+	padding: 5px;
+	margin-right: 20px;
+	background-color: var(--h2-bg-color);
+	color: var(--h2-text-color);
+	
 }
+
+#navigation a{
+	text-decoration: none;
+	background-color: var(--nav-link-bg-color1);
+	padding: 10px;
+	margin: 8px 10px 2px 10px;
+	display: block;
+	font-size: 14pt;
+	text-align: center;
+	transition: 0.5s;
+	color: var(--nav-link-text-color);
+	
+}
+
+#navigation a:visited{
+	color: var(--nav-link-text-color);
+}
+
+#navigation a:hover{
+	background-color: var(--nav-link-bg-color2);
+}
+
+#header{
+	text-align: center;
+	background-color: var(--h1-bg-color);
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin: 0px, 0px, 5px, 0px;
+	color: var(--h1-text-color);
+}
+
+/* Index Page ----------------------------------- */
 
 #content{
 	position: relative;
 	width: 65%;
 	float: left;
+	
 }
 
 #navigation{
 	position: relative;
 	width: 35%;
 	float: right;
-	background-color: lightgray;
+	background-color: var(--nav-bg-color);
+	top: 22px;
+	
 }
 
-
-h1{
-	text-align: center;
-}
-
-.image-container{
+img.image-container{
 	display: inline;
+	position: relative;
+	height: 200px;
+	width: 300px; 
+	object-fit: cover;
+	
 }
 
+/* --------------------------------------- */
 
 /* --------------------- media queries --------------------- */
 
+/* Move the navigation to the top of the screen
+   for smaller devices. */
 @media only screen and (max-width: 800px) {
     #navigation{
 		position: relative;
