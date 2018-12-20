@@ -18,6 +18,16 @@ body{
 	background-color: var(--body-bg-color);
 }
 
+#header{
+	text-align: center;
+	background-color: var(--h1-bg-color);
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin: 0px, 0px, 5px, 0px;
+	color: var(--h1-text-color);
+}
+
 section{
 	position: relative;
 	padding: 3px;
@@ -32,7 +42,20 @@ h2{
 	
 }
 
-#navigation a{
+/* Navigation -------------------------------------- */
+
+/* desktop ------------------ */
+
+#navigation-desktop{
+	position: relative;
+	width: 35%;
+	float: right;
+	background-color: var(--nav-bg-color);
+	top: 22px;
+	
+}
+
+#navigation-desktop a{
 	text-decoration: none;
 	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
@@ -45,22 +68,45 @@ h2{
 	
 }
 
-#navigation a:visited{
+#navigation-desktop a:visited{
 	color: var(--nav-link-text-color);
 }
 
-#navigation a:hover{
+#navigation-desktop a:hover{
 	background-color: var(--nav-link-bg-color2);
 }
 
-#header{
-	text-align: center;
-	background-color: var(--h1-bg-color);
-	display: block;
-	position: relative;
+/* mobile ------------------ */
+
+.mobile-nav-link{
+	text-decoration: none;
+	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
+	margin: 0px;
+	display: block;
+	font-size: 14pt;
+	text-align: center;
+	transition: 0.5s;
+	color: var(--nav-link-text-color);
+	
+}
+
+.mobile-nav-link:visited{
+	color: var(--nav-link-text-color);
+}
+
+.mobile-nav-link:hover{
+	background-color: var(--nav-link-bg-color2);
+}
+
+#navigation-mobile{
+	position: relative;
+	width: 100%;
+	background-color: var(--nav-bg-color);
+	display: none;
 	margin: 0px, 0px, 5px, 0px;
-	color: var(--h1-text-color);
+	
+	
 }
 
 /* Index Page ----------------------------------- */
@@ -69,15 +115,6 @@ h2{
 	position: relative;
 	width: 65%;
 	float: left;
-	
-}
-
-#navigation{
-	position: relative;
-	width: 35%;
-	float: right;
-	background-color: var(--nav-bg-color);
-	top: 22px;
 	
 }
 
@@ -90,17 +127,30 @@ img.image-container{
 	
 }
 
-/* --------------------------------------- */
-
 /* --------------------- media queries --------------------- */
 
 /* Move the navigation to the top of the screen
    for smaller devices. */
 @media only screen and (max-width: 800px) {
-    #navigation{
-		position: relative;
+    #navigation-desktop{
+		display: none;
+	}
+	
+	#navigation-mobile{
+		display: block;
+		background-color: white;
+	}
+	
+	h2{
+		margin: 0px;
+	}
+	
+	section{
 		width: 100%;
-		background-color: lightgray;
+	}
+	
+	.mobile-nav-link{
+		display: none;
 	}
 }
 
