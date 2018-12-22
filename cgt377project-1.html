@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makayla Heemstra</title>
+	  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+	 
+	  <script>
+		  $(document).ready(function(){
+			  
+			 //Click the h2 of the mobile navigation to toggle
+			 //display of the navigation links.
+			 $("#navigation-mobile h2").click(function(){
+			 	if( $(".mobile-nav-link").css("display") == "block" ) {
+   					$("a").filter(".mobile-nav-link").css("display", "none");
+					$("#navigation-mobile").css("background-color", "#FFF9F9");
+				} else {
+   					$("a").filter(".mobile-nav-link").css("display", "block");
+					$("#navigation-mobile").css("background-color", "#C6DABF");
+			 	}
+		
+			})
+			  
+			  
+		  })
+	  
+	  </script>
+	  
+	  
+	  
+  	<div class="container">
+		
+		 <div class="row" id="header">
+		 <div class="col-lg">
+			<h1>Makayla Heemstra</h1>
+		 </div>
+	  </div>
+	  <div class="row">
+		<div class="col-sm" id="navigation-desktop">
+		  <h2>Navigation</h2>
+				<a href="index.html">Portfolio</a> <br/>
+				<a href="about.html">About Me</a> <br/>
+				<a href="resume.html">Resume</a> <br/>
+		</div>
+	   </div>
+		
+	  <div class="row">
+		<div class="col-sm" id="navigation-mobile">
+		 	<h2>Navigation</h2>
+				<a href="index.html" class="mobile-nav-link">Portfolio</a> <br/>
+				<a href="about.html" class="mobile-nav-link">About Me</a> <br/>
+				<a href="resume.html" class="mobile-nav-link">Resume</a> <br/>
+		</div>
+	   </div>
+	  <div class="col-md" id="content">
+		  <h2>Human Brain in VTK Python</h2>
+		<div class="col-med video">
+			<div class="video">
+				<video autoplay muted loop id="video2">
+  					<source src="video/brain.mp4" type="video/mp4">
+				</video>		
+			</div>	
+		</div>
+			
+	  </div>
+		
+	  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
