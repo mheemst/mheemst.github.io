@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Index</title>
+<script>
+	function validateForm() {
+		
+		var email = document.forms["chatform"]
+		
+		["linktomemberpage"].value;
+		if (email == ""){
+			alert("Please make sure to enter your email in the Contact Information section.");
+			return false;
+		}
+		
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Join a Chat Room</h1>
+	
+		<p>Fill out this form to be assigned to a Creators Club chat room. If you do not receive an email response in 3-5 days, please contact the administrator at fisipotu@zdenka.net.</p>
+	</header>
+		
+	<form action="https://formspree.io/fisipotu@zdenka.net" method="POST" onsubmit="return validatateForm()" id="chatform">
+		<fieldset>
+			<legend>Contact Information</legend>
+			Link to member page:<input type="url" name="linktomemberpage"> <br/>
+		
+			Name in chat server: <input type="text" maxlength="30" name="nameinchatserver"> <br/>
+		
+			Email (required): <input type="email" maxlength="30" name="email" required> <br/>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Chat Classification</legend>
+			Birthday: <input type="date" name="birthday"><br/>
+			Artistic interest:<br/> 
+			<input type="checkbox" name="artist" value="Artist">Artist<br/>
+			<input type="checkbox" name="writer" value="writer">Writer<br/>
+		</fieldset>
+			
+		<fieldset>
+			<legend>Complete Form</legend>
+			Comments or Questions:<br/> 
+			<textarea rows="4" cols="50" name="comments" form="chatform">Enter text here...</textarea><br/>
+			Please indicate that you have read and agreed to the <a href="rules.html" target="_blank">chat rules</a>:<br/>
+			<input type="radio" name="agree" value="agree"> I agree with the rules
+			<input type="radio" name="agree" value="agree"> I disagree with the rules<br/><br/>
+			
+			<input type="submit" name="submit" id="submit-button" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>

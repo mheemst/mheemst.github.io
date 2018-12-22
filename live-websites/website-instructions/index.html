@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to Submit a Story on Wattpad</title>
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+</head>
+
+<script>
+$(document).ready(function(){
+/////////// show or hide each step ///////////
+	$("#button-1").click(function(){
+		$("#step-1").toggle();
+	})
+	$("#button-2").click(function(){
+		$("#step-2").toggle();
+	})
+	$("#button-3").click(function(){
+		$("#step-3").toggle();
+	})
+	$("#button-4").click(function(){
+		$("#step-4").toggle();
+	})
+	$("#button-5").click(function(){
+		$("#step-5").toggle();
+	})
+	$("#button-6").click(function(){
+		$("#step-6").toggle();
+	})
+	$("#button-7").click(function(){
+		$("#step-7").toggle();
+	})
+	$("#button-8").click(function(){
+		$("#step-8").toggle();
+	})
+	$("#button-9").click(function(){
+		$("#step-9").toggle();
+	})
+	$("#button-10").click(function(){
+		$("#step-10").toggle();
+	})
+	/////////// show or hide all steps at once ///////////
+	$("#button-show-all").click(function(){
+		$(".step").show();
+	})
+	$("#button-hide-all").click(function(){
+		$(".step").hide();
+	})
+	
+	
+	/////////// Change size of text ///////////
+	$("#button-change-text").click(function(){
+		$(".caption").toggleClass("big-text");
+	})
+	
+	
+	/////////// Animation for Step 9 ///////////
+	$("#button-step-9-animation").click(function(){
+		$("#step-9-animation").animate({"opacity": "1"}, "slow")
+							  .animate({"height": "250px"}, "slow")
+							  .animate({"width": "155px"}, "slow")
+							  .animate({"opacity": "0.5"});
+	
+	})
+});
+	
+</script>
+
+<body>
+	
+	<h1>How to Submit a Story on Wattpad</h1>
+	<p id="page-description">Wattpad is a website for authors to submit their stories and for readers to enjoy these stories. To submit a story, an author needs to go through a simple process.</p>
+	
+	<div id="sidebar">
+		<p>Show or hide steps.</p>
+		<button id="button-1">Step 1</button><br/>
+		<button id="button-2">Step 2</button><br/>
+		<button id="button-3">Step 3</button><br/>
+		<button id="button-4">Step 4</button><br/>
+		<button id="button-5">Step 5</button><br/>
+		<button id="button-6">Step 6</button><br/>
+		<button id="button-7">Step 7</button><br/>
+		<button id="button-8">Step 8</button><br/>
+		<button id="button-9">Step 9</button><br/>
+		<button id="button-10">Step 10</button><br/>
+		
+		<button id="button-show-all">Show All</button>
+		<button id="button-hide-all">Hide All</button><br/>
+		<button id="button-change-text">Change Font Size</button>
+	</div>
+	
+	<section>
+		
+		<div id="step-1" class="step">
+			<img src="images/image-1.png" alt="test image">
+			<div id="caption-1" class="caption">
+				<p>Write the story in another program, like Word or Google Docs.</p>
+			</div>
+		</div>
+		
+		<div id="step-2" class="step">
+			<img src="images/image-2.png" alt="test image">
+			<div id="caption-2" class="caption">
+				<p>Go to Wattpad and look at the navigation at the top of the page. Click on the Create button.</p>
+			</div>
+		</div>
+		
+		<div id="step-3" class="step">
+			<img src="images/image-3.png" alt="test image">
+			<div id="caption-3" class="caption">
+				<p>Click the New Story button.</p>
+			</div>
+		</div>
+	
+		<div id="step-4" class="step">
+			<img src="images/image-4.png" alt="test image">
+			<div id="caption-4" class="caption">
+				<p>Now you will see labeled fields and a gray image to the left that says "Add a cover." First, fill out the fields for title and description.</p>
+			</div>
+		</div>
+			
+		<div id="step-5" class="step">
+			<img src="images/image-5.png" alt="test image">
+			<div id="caption-5" class="caption">
+				<p>Next you will see an area to add tags. Click the "Add a tag" button. Type a word or phrase that people can search for in order to find your story. Tags are seperated by spaces, so if you type a phrase, it will either have to be seperated into individual words or typed all together with no spaces.</p>
+			</div>
+		</div>
+	</section>	
+	<section>
+
+		<div id="step-6" class="step">
+			<img src="images/image-6.png" alt="test image">
+			<div id="caption-6" class="caption">
+				<p>Select the genre and language that your story is written in.</p>
+			</div>
+		</div>
+		
+		<div id="step-7" class="step">
+			<img src="images/image-7.png" alt="test image">
+			<div id="caption-7" class="caption">
+				<p>Select the copyright information that you would like for your story. Most authors choose to reserve all rights. For more information on the options, click the gray circle next to the drop down menu, then click the link that says "Learn more."</p>
+			</div>
+		</div>
+			
+		<div id="step-8" class="step">
+			<img src="images/image-8.png" alt="test image">
+			<div id="caption-8" class="caption">
+				<p>Indicate if your story has mature content. For examples of what is considered mature content, click the gray circle next to the field, then click the link that says "Learn more."</p>
+			</div>
+		</div>
+		
+		<div id="step-9" class="step">
+			<div id="container">
+				<div id="step-9-animation"></div>
+			</div>
+			<div id="caption-9" class="caption">
+				<p>Now you will create a cover. Assuming you have an image selected already, it just needs to be resized to fit Wattpad's dimensions. Wattpad covers are 800x512 pixels. Find an art program that will allow you to create a canvas this size, fit your image to it, then save it as a PNG.</p>
+					
+				<p>Remember to include the title of the story as well as your pen name or username.</p>
+					
+			</div>
+			<button id="button-step-9-animation">Start Animation</button>
+		</div>
+			
+		<div id="step-10" class="step">
+			<img src="images/image-10.png" alt="test image">
+			<div id="caption-10" class="caption">
+				<p>In the top right corner of the screen, click the "Next" button. You will now see a page for the first chapter. Copy and past the title and the chapter contents from your other document. Then in the top right corner, click the Publish button.</p>
+			</div>
+			<p>You have now published your story with its first chapter available.</p>
+		</div>
+		
+	</section>
+
+</body>
+</html>
