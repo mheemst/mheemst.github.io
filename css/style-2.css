@@ -50,6 +50,32 @@ button:hover{
 	
 }
 
+/* about me page ------------------------------------------- */
+
+img#about-me-picture{
+	display: inline;
+	position: relative;
+	float: left;
+	height: 30%;
+	width: 30%; 
+	object-fit: contain;
+}
+
+div#about-me-desc{
+	position: relative;
+	left: 10px;
+	margin: 20px;
+	overflow: hidden;
+	height: 400px;
+}
+
+div#about-me-container{
+	position: relative;
+	width: 70%;
+	left: 15%;
+	background-color: #C6DABF;
+}
+
 /* Navigation -------------------------------------- */
 
 
@@ -173,6 +199,32 @@ img.image-container-medium{
 	background-color: #C6DABF;
 }
 
+	
+}
+
+@media only screen and (max-width: 800px){
+	div#about-me-container{
+		width: 100%;
+		left: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+   
+	img#about-me-picture{
+		display: block;
+		float: none;
+		height: 100%;
+		width: 100%; 
+		object-fit: contain;
+	}
+
+	div#about-me-desc{
+		left: 0%;
+		right: 10px;
+	}
+	
 	
 }
 
