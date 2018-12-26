@@ -183,6 +183,12 @@ img.image-container-medium{
 	width: 90%;
 }
 
+#resume-page-h2{
+	display: block;
+	position: relative;
+	width: 60%;
+}
+
 /* --------------------- media queries --------------------- */
 
 /* Move the navigation to the top of the screen
@@ -197,7 +203,7 @@ img.image-container-medium{
 		background-color: #FFF9F9;
 	}
 	
-	h2{
+	#navigation-mobile h2{
 		margin: 0px;
 	}
 	
@@ -223,6 +229,10 @@ img.image-container-medium{
 	
 	#resume-object{
 		display: none;
+	}
+	
+	#resume-page-h2{
+		width: 99%;
 	}
 
 }
