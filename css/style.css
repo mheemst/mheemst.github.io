@@ -15,16 +15,19 @@
 
 body{
 	font-family: sans-serif;
+	background-color: #FFF9F9;
 	background-color: var(--body-bg-color);
 }
 
 #header{
 	text-align: center;
+	background-color: #114B5F;
 	background-color: var(--h1-bg-color);
 	display: block;
 	position: relative;
 	padding: 10px;
 	margin: 0px, 0px, 5px, 0px;
+	color: white;
 	color: var(--h1-text-color);
 }
 
@@ -37,7 +40,9 @@ section{
 h2{
 	padding: 5px;
 	margin-right: 20px;
+	background-color: #1A936F;
 	background-color: var(--h2-bg-color);
+	color: white;
 	color: var(--h2-text-color);
 	
 }
@@ -77,6 +82,7 @@ div.video{
 	position: fixed;
 	width: 35%;
 	right: 10px;
+	background-color: #C6DABF;
 	background-color: var(--nav-bg-color);
 	top: 130px;
 	
@@ -84,6 +90,7 @@ div.video{
 
 #navigation-desktop a{
 	text-decoration: none;
+	background-color: #114B5F;
 	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
 	margin: 8px 10px 2px 10px;
@@ -91,15 +98,18 @@ div.video{
 	font-size: 14pt;
 	text-align: center;
 	transition: 0.5s;
+	color: white;
 	color: var(--nav-link-text-color);
 	
 }
 
 #navigation-desktop a:visited{
+	color: white;
 	color: var(--nav-link-text-color);
 }
 
 #navigation-desktop a:hover{
+	background-color: #88D498;
 	background-color: var(--nav-link-bg-color2);
 }
 
@@ -107,6 +117,7 @@ div.video{
 
 .mobile-nav-link{
 	text-decoration: none;
+	background-color: #114B5F;
 	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
 	margin: 0px;
@@ -119,16 +130,19 @@ div.video{
 }
 
 .mobile-nav-link:visited{
+	color: white;
 	color: var(--nav-link-text-color);
 }
 
 .mobile-nav-link:hover{
+	background-color: #88D498;
 	background-color: var(--nav-link-bg-color2);
 }
 
 #navigation-mobile{
 	position: relative;
 	width: 100%;
+	background-color: #C6DABF;
 	background-color: var(--nav-bg-color);
 	display: none;
 	margin: 0px, 0px, 5px, 0px;
