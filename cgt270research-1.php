@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makayla Heemstra</title>
+	  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  
+	<link href="css/style-2.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+	 
+	  <script>
+		  $(document).ready(function(){
+			  
+			 //Click the h2 of the mobile navigation to toggle
+			 //display of the navigation links.
+			 $("#navigation-mobile h2").click(function(){
+			 	if( $(".mobile-nav-link").css("display") == "block" ) {
+   					$("a").filter(".mobile-nav-link").css("display", "none");
+					$("#navigation-mobile").css("background-color", "#FFF9F9");
+				} else {
+   					$("a").filter(".mobile-nav-link").css("display", "block");
+					$("#navigation-mobile").css("background-color", "#C6DABF");
+			 	}
+		
+			})
+			  
+			  
+		  })
+	  
+	  </script>
+	  
+	  
+	  
+  	<div class="container">
+		
+	  <div class="row">
+		<div class="col-sm" id="navigation-mobile">
+		 <?php 
+			include('includes/navigation-mobile.php');
+		 ?>
+		</div>
+	   </div>
+		<div class="row">
+				<h2>Data Driven Research</h2>
+		  			<img class="image-container-large-wide" src="images/cgt270research-1.png" alt="test image">
+		</div>
+		<div class="row">
+			<section>
+				<div class="col-sm photos">
+					<img class="image-container-small" id="poster-img-1" src="images/posterexpopicture.jpg" alt="test image">
+					<img class="image-container-small" id="poster-img-2" src="images/posterexpopicture2.JPG" alt="test image">
+				</div>
+		<div class="col-med video">
+			<div class="video">
+				<video autoplay muted loop id="video1">
+  					<source src="video/tableau-chart.mp4" type="video/mp4">
+				</video>		
+			</div>	
+		</div>
+			</section>
+			
+					
+		</div>
+		
+		<div class="row">
+			<div class="col-lg">
+				<p>For a semester project I conducted data driven research. I presented this research poster at the Purdue Undergraduate Research Conference and wrote a research paper.<br/>My original research question is "If the ability to afford education affects the ability to attain it, will graduation rates be higher when tuition is lower?" The main goal was to visualize whether or not a trend line exists between the the price of college and the graduation rate. My results showed a weak trendline and gave me insight on how to continue my research. Future work includes examining more factors that could affect graduation rates and investigating new wvariables to represent my research question.</p>
+					<a href="index.php"><button>Back to Portfolio</button></a> <a href="objects/research-paper.pdf" target="_blank"><button>Open Research Paper in New Tab</button></a>
+			</div>
+					
+		</div>
+	  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
   --h2-bg-color: #1A936F;
   --body-bg-color: #FFF9F9;
   --nav-bg-color: #C6DABF;
-  --nav-link-bg-color1: #114B5F;
+  --nav-link-bg-color1: #1A936F;
   --nav-link-bg-color2: #88D498;
 	
   --nav-link-text-color: white;
@@ -19,14 +19,13 @@ body{
 	background-color: var(--body-bg-color);
 }
 
-#header{
+h1{
 	text-align: center;
 	background-color: #114B5F;
 	background-color: var(--h1-bg-color);
 	display: block;
 	position: relative;
 	padding: 10px;
-	margin: 0px, 0px, 5px, 0px;
 	color: white;
 	color: var(--h1-text-color);
 }
@@ -80,17 +79,22 @@ div.video{
 
 #navigation-desktop{
 	position: fixed;
-	width: 35%;
+	width: 15%;
+	height: 100vh;
 	right: 10px;
 	background-color: #C6DABF;
 	background-color: var(--nav-bg-color);
-	top: 130px;
+	top: 0px;
 	
+}
+
+#navigation-desktop h2{
+	visibility: hidden;
 }
 
 #navigation-desktop a{
 	text-decoration: none;
-	background-color: #114B5F;
+	background-color: #1A936F;
 	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
 	margin: 8px 10px 2px 10px;
@@ -117,7 +121,7 @@ div.video{
 
 .mobile-nav-link{
 	text-decoration: none;
-	background-color: #114B5F;
+	background-color: #1A936F;
 	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
 	margin: 0px;
@@ -152,10 +156,10 @@ div.video{
 
 /* Index Page ----------------------------------- */
 
-/* sections containing images */
+/* container for all 3 sections on index */
 #content{
 	position: relative;
-	width: 65%;
+	width: 85%;
 	float: left;
 	
 }
@@ -205,6 +209,10 @@ img.image-container-medium{
 
 /* --------------------- media queries --------------------- */
 
+/* Smaller title font size when screen is smaller */
+@media only screen and (max-width: 1080px) {
+	h1{font-size: 16pt;}
+}
 /* Move the navigation to the top of the screen
    for smaller devices. */
 @media only screen and (max-width: 800px) {
@@ -250,5 +258,3 @@ img.image-container-medium{
 	}
 
 }
-
-

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makayla Heemstra</title>
+	  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+	 
+	  <script>
+		  $(document).ready(function(){
+			  
+			 //Click the h2 of the mobile navigation to toggle
+			 //display of the navigation links.
+			 $("#navigation-mobile h2").click(function(){
+			 	if( $(".mobile-nav-link").css("display") == "block" ) {
+   					$("a").filter(".mobile-nav-link").css("display", "none");
+					$("#navigation-mobile").css("background-color", "#FFF9F9");
+				} else {
+   					$("a").filter(".mobile-nav-link").css("display", "block");
+					$("#navigation-mobile").css("background-color", "#C6DABF");
+			 	}
+		
+			})
+			  
+			  
+		  })
+	  
+	  </script>
+	  
+	  
+	  
+  	<div class="container">
+	  <div class="row">
+		<div class="col-sm" id="navigation-desktop">
+		 <?php 
+			include('includes/navigation.php');
+		 ?>
+	    </div>
+	  </div>
+	  <div class="row">
+		<div class="col-sm" id="navigation-mobile">
+		 <?php 
+			include('includes/navigation-mobile.php');
+		 ?>
+		</div>
+	   </div>
+		
+		<div class="col-md" id="content">
+		  <section id="web">
+			<h2>Web</h2>
+			  <a href="3freuds-1.php"><img class="image-container-medium" src="images/3freuds-1.png" alt="test image"></a>
+			  <a href="cgt353lab-1.php"><img class="image-container-medium" src="images/cgt353lab-1.png" alt="test image"></a>
+			  <a href="cgt353lab-2.php"><img class="image-container-medium" src="images/cgt353lab-2.png" alt="test image"></a>
+			  <a href="cgt370lab-1.php"><img class="image-container-medium" src="images/cgt370lab-1.png" alt="test image"></a>
+			  
+		  </section>
+		  <section id="graphic-design">
+			<h2>Graphic Design</h2>
+			  <a href="lavender-rose-catering.php"><img class="image-container-small" src="images/lavender-rose-catering.png" alt="banner for Lavender Rose Catering"></a>
+			  <a href="NaNoWrMo-Infographic.php"><img class="image-container-small" src="images/NaNoWrMo Infographic.png" alt="NaNoWriMo infographic"></a>
+			  <a href="onthesamepage.php"><img class="image-container-small" src="images/onthesamepage.png" alt="people standing on a page of a book"></a>
+		  </section>
+		  <section id="data-viz">
+			<h2>Data Visualization</h2>
+			  <a href="cgt270research-1.php"><img class="image-container-small" src="images/cgt270research-1.png" alt="test image"></a>
+			  <a href="cgt370project-1.php"><img class="image-container-small" src="images/cgt370project-1.png" alt="test image"></a>
+			  <a href="cgt377project-1.php"><img class="image-container-small" src="images/cgt377project-1.png" alt="test image"></a>
+		  </section>
+		  
+		</div>
+	  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
