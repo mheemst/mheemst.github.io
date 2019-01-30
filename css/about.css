@@ -30,12 +30,6 @@ h1{
 	color: var(--h1-text-color);
 }
 
-section{
-	position: relative;
-	padding: 3px;
-	
-}
-
 h2{
 	padding: 5px;
 	margin-right: 20px;
@@ -53,6 +47,7 @@ button{
 	border: 2px solid #88D498;
 	padding: 3px;
 	transition: 0.5s;
+	font-size: 15pt;
 }
 
 button:hover{
@@ -60,17 +55,9 @@ button:hover{
 	
 }
 
-div.video{
+#contact-text{
 	position: relative;
-	width: 85%;
-	float: left;
-}
-
-#video2{
-	position: relative;
-  	width: 100%;
-	height: 100%;
-	
+	top: -40px;
 }
 
 /* Navigation -------------------------------------- */
@@ -146,60 +133,111 @@ div.video{
 	
 }
 
-/* Index Page ----------------------------------- */
-
-/* container for all 3 sections on index */
-#content{
-	position: relative;
-	width: 85%;
-	float: left;
-	
-}
-
-/* format each image to be the same width and height */
-img.image-container-small{
-	display: inline;
-	position: relative;
-	height: 200px;
-	width: 300px; 
-	object-fit: cover;
-	
-}
-
-img.image-container-large-wide{
-	display: inline;
-	position: relative;
-	height: 80%;
-	width: 90%; 
-	object-fit: contain;
-	
-}
-
-img.image-container-medium{
-	display: inline;
-	position: relative;
-	height: 250px;
-	width: 350px;
-	object-fit: cover;
-	
-}
-
-#mobile-resume{
-	display: none;
-}
-
-#mobile-resume-img{
-	position: relative;
-	width: 90%;
-}
-
-#resume-page-h2{
+h2{
+	width: 82%;
+	position: absolute;
 	display: block;
+	padding: 15px 10px;
+	margin-bottom: 10px;
+	top: -20px;
+}
+
+#about-me-container{
+	background-color: #114B5F;
+	width: 40%;
 	position: relative;
-	width: 60%;
+	height: 590px;
+	top: 60px;
+}
+
+#about-me-picture{
+	width: 40%;
+	background-color: white;
+	padding: 20px 15px 40px 15px;
+	margin: 10px 25%;
+	box-shadow: 3px 8px 10px;
+}
+
+#about-me-desc{
+	background-color: #C6DABF;
+	padding: 10px;
+}
+
+#skills-list{
+	position: relative;
+	top: -50px;
+}
+
+#skills-container{
+	position: relative;
+	display: block;
+	left: 42%;
+	width: 40%;
+	bottom: 555px;
+	height: 590px;
+	background-color: #C6DABF;
+}
+
+#skills-header{
+	font-size: 20pt;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: white;
+	background-color: #1A936F;
+}
+
+li{
+	width: 30%;
+}
+
+li.language{
+	margin: 2px 0px;
+	padding: 2px;
+}
+
+li.language-cont{
+	margin: 0px;
+	padding: 2px;
+}
+
+li.software{
+	margin: 2px 0px;
+	padding: 2px;
+}
+
+li.li-heading{
+	list-style-type: none;
+	background-color: #1A936F;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	width: 80%;
+}
+
+#contact-container{
+	width: 80%;
+	height: 300px;
+	position: relative;
+	bottom: 500px;
+}
+
+#contact-header{
+	position: relative;
+	background-color: #1A936F;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	width: 102%;
+	font-size: 20pt;
+	top: -40px;
 }
 
 /* --------------------- media queries --------------------- */
+
+@media only screen and (max-width: 1290px) {
+	h2{width: 79.5%;}
+	#skills-list{top: -65px;}
+}
 
 /* Smaller title font size when screen is smaller */
 @media only screen and (max-width: 1080px) {
@@ -208,6 +246,32 @@ img.image-container-medium{
 /* Move the navigation to the top of the screen
    for smaller devices. */
 @media only screen and (max-width: 800px) {
+	
+	#contact-container{bottom: -90px;}
+	
+	#contact-header{width: 100%;}
+	
+	h2{
+		width: 98%;
+		position: relative;
+		top: 3px;
+	}
+	
+	#skills-container{
+		left: 0px;
+		width: 100%;
+		bottom: auto;
+		top: 50px;;
+		height: 590px;
+	}
+	
+	#about-me-container{
+		width: 100%;
+		top: auto;
+		bottom: auto;
+		
+	}
+	
     #navigation-desktop{
 		display: none;
 	}
@@ -219,22 +283,5 @@ img.image-container-medium{
 	#navigation-mobile h2{margin: 0px;}
 	
 	.mobile-nav-link{display: none;}
-
-	
-	section{
-		width: 100%;
-	}
-	
-	.mobile-nav-link{
-		display: none;
-	}
-	
-	#image-desc{
-		width: 96%;
-	}
-	
-	#content{
-		width: 100%;
-	}
 
 }

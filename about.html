@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	  
-	<link href="css/style-2.css" rel="stylesheet">
+	<link href="css/about.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -40,29 +40,82 @@
 	  
   	<div class="container">
 		
-		 <div class="row" id="header">
-		 <div class="col-lg">
-			<h1>Makayla Heemstra</h1>
-		 </div>
-	  </div>
+	  <div class="row">
+		   <div class="col-sm" id="navigation-desktop">
+			   <h1>Makayla Heemstra</h1>
+		  		<h2>Navigation</h2>
+					<a href="index.html">Portfolio</a> <br/>
+					<a href="about.html">About Me</a> <br/>
+			</div>
+	   </div>
 		
 	  <div class="row">
 		<div class="col-sm" id="navigation-mobile">
 		 	<h2>Navigation</h2>
 				<a href="index.html" class="mobile-nav-link">Portfolio</a> <br/>
 				<a href="about.html" class="mobile-nav-link">About Me</a> <br/>
-				<a href="resume.html" class="mobile-nav-link">Resume</a> <br/>
 		</div>
 	   </div>
-	<div class="row" id="about-me-container">
-		 <div class="col-md">
-		  <h2>About Me</h2>
-		 	<img src="images/about-me-picture.png" id="about-me-picture" class="image-container-medium" alt="picture of me">
-	  </div>
-	  <div class="col-md" id="about-me-desc">
-	  	<p>My name is Kayla. I'm from the suburbs of Grand Rapids and currently attending Purdue University. There I'm pursuing two majors in the Computer Graphics Technology department: Web Programming and Design, and Data Visualization. I can create art and I can code in multiple languages. The reason I chose to major in CGT is because the combination of art and programming is exciting. My passion for creative activities influences my goals in life. Other things I enjoy are writing stories and making music.</p><br/>
-		  <a href="https://www.linkedin.com/in/kayla-heemstra-b33348157/" target="_blank"><button>LinkedIn</button></a>
-	  </div>
+	<div class="row">
+		<h2>About Me</h2>
+		 <div class="col-md" id="about-me-container">
+		 	<img src="images/about-me-picture.png" id="about-me-picture" alt="picture of me">
+	  		<p id="about-me-desc">Hey there!<br/><br/>My name is Makayla. My passion is in creativity and how it can help people succeed. That's why I'm attending a school in another state, with more students than there are people in my hometown. I'm double majoring in Web Programming and Design, and Data Visualization. I also enjoy creative writing, drawing, making videos, and recording songs.<br/><br/>The reson I'm majoring in programming and design fields is because I like to utilize code to enhance ideas. I am happy to help pursue creative solutions.</p><br/>
+	  	</div>
+		<div class="col-md" id="skills-container">
+			<p id="skills-header">What I Do</p><br/><br/>
+			<ul id="skills-list">
+				<li class="li-heading">Web Programming</li>
+					<ul>
+						<li>Languages:</li>
+							<ul> <!-- web languages list -->
+								<li class="language">HTML</li>
+								<li class="language">CSS</li>
+								<li class="language">JavaScript</li>
+									<ul>
+										<li class="language-cont">jQuery</li>
+										<li class="language-cont">D3.js</li>
+										<li class="language-cont">JSON</li>
+									</ul>
+								<li class="language">PHP</li>
+							</ul> <!-- end web languages list -->
+						<li>Software:</li>
+							<ul>
+								<li class="software"> Adobe Dreamweaver</li>
+							</ul>
+					</ul> <!-- end web programming list -->
+				<li class="li-heading">Data Visualization</li>
+					<ul>
+						<li>Languages:</li>
+							<ul> 
+								<li class="language">Python</li>
+							</ul>
+						<li>Software:</li>
+							<ul>
+								<li class="software">Tableau</li>
+							</ul>
+					</ul> 
+				<li class="li-heading">Graphic Design</li>
+					<ul>
+						<li>Software:</li>
+							<ul>
+								<li class="software">Adobe Photoshop</li>
+								<li class="software">Adobe Illustrator</li>
+							</ul>
+					</ul>
+			</ul>
+		</div> <!-- end entire skills container -->
+	</div>
+	<div class="row">
+		<div class="col-lg" id="contact-container">
+			<p id="contact-header">Contact Me</p>
+		<div id="contact-text">
+			<p>mheemst@purdue.edu</p>
+			<p>(616) 368-9829</p>
+			<a href="https://www.linkedin.com/in/makayla-heemstra-b33348157/"><button>LinkedIn</button></a>
+		</div>
+			
+		</div>
 	</div>
 	  	
 	  </div>

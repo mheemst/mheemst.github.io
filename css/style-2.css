@@ -5,7 +5,7 @@
   --h2-bg-color: #1A936F;
   --body-bg-color: #FFF9F9;
   --nav-bg-color: #C6DABF;
-  --nav-link-bg-color1: #114B5F;
+  --nav-link-bg-color1: #1A936F;
   --nav-link-bg-color2: #88D498;
 	
   --nav-link-text-color: white;
@@ -55,66 +55,34 @@ button:hover{
 	
 }
 
-/* about me page ------------------------------------------- */
-
-img#about-me-picture{
-	display: inline;
-	position: relative;
-	float: left;
-	height: 30%;
-	width: 30%; 
-	object-fit: contain;
-}
-
-div#about-me-desc{
-	position: relative;
-	left: 10px;
-	margin: 20px;
-	overflow: hidden;
-	height: 400px;
-}
-
-div#about-me-container{
-	position: relative;
-	width: 70%;
-	left: 15%;
-	background-color: #C6DABF;
-}
-
 /* Navigation -------------------------------------- */
 
 
+/* mobile ------------------ */
+
 .mobile-nav-link{
 	text-decoration: none;
-	background-color: #114B5F;
-	background-color: var(--nav-link-bg-color1);
 	padding: 10px;
 	margin: 0px;
-	display: none;
+	display: block;
 	font-size: 14pt;
 	text-align: center;
 	transition: 0.5s;
-	color: white;
-	color: var(--nav-link-text-color);
+	position: relative;
 	
 }
 
 .mobile-nav-link:visited{
-	color: white;
-	color: var(--nav-link-text-color);
+	color: black;
+	text-decoration: none;
 }
 
-.mobile-nav-link:hover{
-	background-color: #88D498;
-	background-color: var(--nav-link-bg-color2);
-}
-
-#navigation-mobile{
+#navigation-mobile a{
 	position: relative;
-	width: 100%;
-	margin: 0px, 0px, 5px, 0px;
-	display: block;
-	background-color: #FFF9F9;
+	width: 101%;
+	display: none;
+	top: -11px;
+	margin: 5px 0px 5px 0px;
 	
 	
 }
@@ -211,31 +179,6 @@ img.image-container-medium{
 	
 }
 
-@media only screen and (max-width: 800px){
-	div#about-me-container{
-		width: 100%;
-		left: 0;
-	}
-	
-}
-
-@media only screen and (max-width: 600px) {
-   
-	img#about-me-picture{
-		display: block;
-		float: none;
-		height: 100%;
-		width: 100%; 
-		object-fit: contain;
-	}
-
-	div#about-me-desc{
-		left: 0%;
-		right: 10px;
-	}
-	
-	
-}
 
 
 
