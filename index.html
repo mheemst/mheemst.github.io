@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="nav.js"></script>
+<script src="projects.js"></script>
 <title>Makayla Heemstra</title>
 </head>
 
@@ -17,8 +18,8 @@
 				<li><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
 		</div>
-		<div class="header section">
-			<p class="small-text">Web Programming</p>
+		<div class="header">
+			<p class="small-text">Graphic Design & Web Programming</p>
 			<h1>Makayla Heemstra</h1>
 			<ul>
 				<li><a href="#work" class="nav-link">Work</a>&nbsp;&nbsp;/&nbsp;</li>
@@ -27,99 +28,161 @@
 			</ul>
 		</div>
 		<a name="work"></a>
+		<div class="section-heading2"><h2>Work</h2></div>
 		<div class="work-section">
-			<div class="section-heading work-heading"><h2>Work</h2></div>
-			<ul class="image-grid">
-				<li>
-					<div class="card-container grid-img-1">
-   				    	<div class="img-container">
-							<img src="images/aluriconsulting.PNG" alt="Aluri Consulting Site">
-						</div>
-						
-						<p class="img-caption">
-							<span class="img-title">Aluri Consulting</span><br><br>
-							<span class="img-desc">This page introduces team members in my capstone group. It will be updated with our project information soon. We are working on a scheduling tool for Purdue University's Computer Graphics Technology department.</span>
-						</p>
-						<a class="button-link" href="http://aluriconsulting.com/"><div class="little-button">See Live Site</div></a>
-					</div>
-				</li>
-				<li>
-					<div class="card-container grid-img-2">
-						<div class="img-container">
-							<img src="images/earthquakemessages.PNG" alt="Earthquake Messages Site">
-						</div>
-						<p class="img-caption">
-							<span class="img-title">Earthquake Messages</span><br><br>
-							<span class="img-desc">Generated data shows messages that people sent each other during an earthquake. Select a user to see their locations and the content of their messages. This data visualization is created with D3.js.</span>
-						</p>
-						<a class="button-link" href="https://web.ics.purdue.edu/~mheemst/VAST/"><div class="little-button">See Live Site</div></a>
-					</div>
-				</li>
-				<li>
-					<div class="card-container grid-img-3">
-						<div class="img-container">
-							<img src="images/webcomic-website.PNG" alt="Wordpress Webcomic Site">
-						</div>
-						<p class="img-caption">
-							<span class="img-title">Wordpress Webcomic Site</span><br><br>
-							<span class="img-desc">Information for a webcomic I am writing and illustrating. The site can host the actual comic when it is ready to upload, but currently it includes concept art and character information.</span>
-						</p>
-						<a class="button-link" href="https://themazeofrealmscomic.com/"><div class="little-button">See Live Site</div></a>
-					</div>
-				</li>
-				<li>
-					<div class="card-container grid-img-4">
-						<div class="img-container">
-							<img src="images/d3map.PNG" alt="U.S. Health Score Map Site">
-						</div>
-						<p class="img-caption">
-							<span class="img-title">U.S. Health Score Map</span><br><br>
-							<span class="img-desc">This interactive map shows 2017 healthscores acorss the U.S. compared to other years.</span>
-						</p><br/>
-						<a class="button-link" href="https://web.ics.purdue.edu/~mheemst/2017-2018/index2.html"><div class="little-button">See Live Site</div></a>
-					</div>
-				</li>
-			</ul>
+			<div class="image-container">
+				<img src="images/purple-plant-color.png">
+			</div>
+			<div class="image-container">
+				<img src="images/good-vibes.png">
+			</div>
+			<div class="image-container">
+				<img src="images/cute-space3.png">
+			</div>
 		</div>
+		<!-- Make the whole row a slideshow of different projects? -->
+		<div class="project-row blue-bg">
+			<!-- container for full-size thumbnail display -->
+			<div id="expand-thumbnail" class="fade">
+				<div class="minimize" onClick="minimize()">X</div>
+				<div id="big-thumbnail">
+					
+				</div>
+			</div>
+			<!-- slide one -->
+			<div class="project-slide first-slide fade">
+				<div class="image-container">
+					<img class="project" src="images/jellyfish-dress-with-background.png">
+				</div>
+				<div class="project text-container">
+					<p>This is a photo rendering of an illustration I did. I designed a jellyfish inspired dress for a character from one of my stories,
+						and I liked it so much that I recreated it with photos on this model. The inspiration for the jellyfish theme is my character's
+						interest in the ocean. I have used Photoshop before to do projects like this, but I made this one in Clip Studio Paint. Every element of the
+						outfit comes from one picture of a jellyfish and a bit of freehand illustration. Below, you can see the process that went into creating
+						this image, as well as the original illustration that inspired it.
+					</p>
+				</div>
+				<div class="thumbnails">
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/jellyfish-dress.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/october-jellyfish-dress.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/IMG_20220421_202835_969.jpg" onClick="expandThumbnail(this)">
+					</div>
+				</div>
+			</div>
+			<!-- slide two -->
+			<div class="project-slide fade">
+				<div class="image-container">
+					<img class="project" src="images/frog-picnic.png">
+				</div>
+				<div class="project text-container">
+					<p>These cute frogs are part of a commission for LGBTQ+ pride apparel. The client gave me a lot of creative liberty, so I generated many sketches for him. Then I organized them into a slide show and numbered them so he could
+						easily indicate which ones he was leaning towards. Originally he planned to purchase two designs, but he ended up liking three of the first sketches. Once I fully rendered them, he decided to purchase a third one as well. When his shop launches,
+						I will be cooperating with him to advertise the merchandise. We plan to utilize social media marketing, which is something I have been teaching myself about.
+					</p>
+				</div>
+				<div class="thumbnails">
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/pride-sketches.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/gaylien.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/worm-heart.png" onClick="expandThumbnail(this)">
+					</div>	
+				</div>
+			</div>
+			<!-- slide three -->
+			<div class="project-slide fade">
+				<div class="image-container">
+					<img class="project" src="images/lemoncherrypen/commissions-site.png">
+				</div>
+				<div class="project text-container">
+					<p>Lemon Cherry Pen is a light-hearted brand I use for digital art. It is the name of my Etsy shop and the name under which I do commissions. When I 
+					   first began networking with other creatives, I formed a group of friends who made a joke out of drawing a personified lemon for me. It's a lemon with a 
+					   face and legs. I liked that goofy idea and decided to run with it, hence the large lemon face present in my banner images.
+					</p>
+					<p style="text-align:center;" class="project-link-container"><a href="https://lemoncherrypen.github.io/" class="project-link" target="_blank">Click here to see the website I made for commission work.</a></p>
+				</div>
+				<div class="thumbnails">
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/lemoncherrypen/etsy-shop.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/lemoncherrypen/etsy-logo-large.png" onClick="expandThumbnail(this)">
+					</div>
+					<div class="thumbnail-container small">
+						<img class="thumbnail" src="images/lemoncherrypen/lemon-dancing.gif" onClick="expandThumbnail(this)">
+					</div>	
+				</div>
+			</div>
+			<!-- arrow buttons -->
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+		<br/>
+		<!-- The dots/circles -->
+		<div id="dots" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
 		<a name="about"></a>
 		<div id="about" class="section">
-		<div class="section-heading"><h2>About</h2></div>
-			<div id="about-img-container"><img src="images/about-me-picture.png" alt="Makayla Heemstra"></div>
-			<div class="text-section">
-					<p class="title">I'm a Purdue student from Michigan in my senior year of a double major in Web Programming and Data Visualization.</p>
-					<p class="subtitle">Tools</p>
-				<p class="desc">Programming languages and software I use</p>
-					<ul class="list">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript (jQuery, D3)</li>
-						<li>PHP</li>
-						<li>Adobe Creative Suite
-							<ul>
-								<li class="list-indent">Photoshop</li>
-								<li class="list-indent">Illustrator</li>
-								<li class="list-indent">Dreamweaver</li>
-								<li class="list-indent">InDesign</li>
-							</ul>
-						</li>
-						<li>Tableau</li>
-					</ul>
-				<br>
-				<a class="button-link" href="resume_makayla_heemstra.pdf"><div class="little-button">Resume</div></a>
+			<div class="section-heading"><h2>About</h2></div>
+			<div class="image-container">
+				<img src="images/about-me-picture.jpg">
+			</div>
+			<div class="text-container">
+				<p>
+					Hey, I'm Kayla. In 2020 I graduated from Purdue University with a double major in Web Programming & Design and Data Visualization. They're hybrid programs that teach coding alongside the principles of design. I'm accustomed to working in teams with a focus on
+					user-friendliness. After college, I spent some time as a junior developer at One Stop Inc. There, I improved my Python skills while maintaining
+					retail sites and working on tech support. An analytical side of me likes programming, but my passion is in art and design. In my
+					spare time, I do personal commissions, network with other creatives, and work on webcomics. I especially enjoy teaching myself about branding,
+					sales, and social media marketing. In addition to that, I do video editing and music production.
+				</p>
+				<div class="subtitle">Tools I Use:</div>
+				<ul>
+					<li>Adobe Creative Suite (Photoshop, Illustrator, InDesign, etc.)</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript (jQuery, D3)</li>
+					<li>Python</li>
+					<li>PHP</li>
+					<li>SQL</li>
+				</ul>
+				<div class="subtitle">Some Things I Can Do:</div>
+				<ul>
+					<li>Graphic Design</li>
+					<li>Web Development</li>
+					<li>Photo editing</li>
+					<li>Video editing</li>
+					<li>Motion graphics</li>
+					<li>Create and deliver presentations</li>
+					<li>Generate mockups</li>
+					<li>Effectively communicate with clients and coworkers</li>
+					<li>Be open to learning new methods and skills</li>
+				</ul>
 			</div>
 		</div>
 		<a name="contact"></a>
-		<div id="contact" class="section">
+		<div class="contact-section">
 			<div class="section-heading"><h2>Contact</h2></div>
-			<div class="text-section">
-				<p class="title">If you are interested in working together to craft websites and visualizations, feel free to contact me.</p>
-				<p class="subtitle">I am available for full-time employment starting summer 2020.</p>
-				<p class="desc">makayla.heemstra@gmail.com</p>
-				<p class="desc">(616) 368-9829</p>
-				<a class="button-link" href="https://www.linkedin.com/in/makayla-heemstra-b33348157/"><div class="little-button-2">LinkedIn</div></a>
+			<div class="text-container"><br/><br/>
+				<p class="title">Hey, thanks for stopping by!</p>
+				<p class="subtitle">If you're looking for a designer who's enthusiastic about learning and who enjoys working hard with a solid team, I'd be happy to hear from you.</p> 
+				<p class="desc">Feel free to send me an email or give me a call. For more information such as my resume, check out my LinkedIn.</p><br/>
+				<p class="desc">makayla.heemstra@gmail.com</p><br/>
+				<p class="desc">(616) 368-9829</p><br/>
+				<a class="button-link" href="https://www.linkedin.com/in/makayla-heemstra-b33348157/"><div class="little-button">LinkedIn</div></a><br/><br/>
 			</div>
 		</div>
 	</div>
-
 
 </body></html>
